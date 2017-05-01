@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
   <head>
     <meta charset="utf-8">
     <title>Blog</title>
@@ -28,32 +28,73 @@
 <body>
   <div class="wrapper">
     <section class="section hero">
-      <ul class="socials">
-        <li class="socials__item"><a class="socials__link socials__link_vk" href=""></a></li>
-        <li class="socials__item"><a class="socials__link socials__link_gh" href=""></a></li>
-        <li class="socials__item"><a class="socials__link socials__link_in" href=""></a></li>
-      </ul><a class="hamburger" href=""></a><a class="down-arrow" href=""></a>
+      <div class="hero__bg"><img class="hero__bg-img" src="assets/img/bg/portfolio.jpg" alt="">
+        <ul class="socials hero__socials">
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#vk"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#github"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#in"></use>
+            </svg>
+          </li>
+        </ul>
+      </div><a class="hamburger hero__hamburger" href=""><img class="hamburger__img" src="assets/img/icons/svg/hamburger.svg"></a><a class="down-arrow" href=""><img class="down-arrow__icon" src="assets/img/icons/arrow_down.svg"></a>
       <div class="hero__title">
-        <div class="title subtitle_color_white">БЛОГ</div>
-        <div class="text">Статьи, которые я написал</div>
+        <div class="user hero__user-block">
+          <div class="user__photo">
+            <div class="user__photo-avatar"><img class="user__photo-img" src="assets/img/content/user.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="blog__title">
+          <div class="title title_color_white" style="background-image: url('assets/img/decor/blog-header.png');">БЛОГ</div>
+          <div class="hero__text">Статьи, которые я написал</div>
+        </div>
       </div>
     </section>
     <section class="section blog-content">
+      <div class="blog-content__triangle">
+        <div class="blog-content__triangle_left">
+          <svg class="triangle triangle_fill_white blog_triangle_position" viewbox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,0 0,100 1000,100"></polygon>
+          </svg>
+        </div>
+        <div class="blog-content__triangle_right">
+          <svg class="triangle triangle_fill_white blog_triangle_position" viewbox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,100 1000,100 1000,0"></polygon>
+          </svg>
+        </div>
+      </div>
       <div class="blog-content__left">
-        <svg class="triangle triangle_fill_white"></svg>
-        <ul class="menu">
-          <li class="menu_item"><a class="menu__title" href="">Самое важное в SASS</a></li>
-          <li class="menu_item"><a class="menu__title" href="">Приёмы в вёрстке, без которых обходится ни один сайт</a></li>
-          <li class="menu_item"><a class="menu__title" href="">Самый необходимый набор Gulp плагинов</a></li>
-          <li class="menu_item"><a class="menu__title" href="">Почему я выбрал Jade</a></li>
+        <ul class="sidemenu">
+          <li class="sidemenu__item"><a class="sidemenu__title" href="">Самое важное в SASS</a></li>
+          <li class="sidemenu__item"><a class="sidemenu__title" href="">Приёмы в вёрстке, без которых обходится ни один сайт</a></li>
+          <li class="sidemenu__item"><a class="sidemenu__title" href="">Самый необходимый набор Gulp плагинов</a></li>
+          <li class="sidemenu__item"><a class="sidemenu__title" href="">Почему я выбрал Jade</a></li>
         </ul>
       </div>
       <div class="blog-content__right">
-        <svg class="triangle triangle_fill_beige"></svg>
         <ul class="articles">
-          <li class="articles__item"><a class="articles__title" href=""></a>
-            <div class="articles__create_time"></div>
-            <div class="articles__text"></div>
+          <li class="articles__item"><a class="articles__title" href="">Самое важное в SASS</a>
+            <div class="articles__create_time">22 ноября 2016</div>
+            <div class="articles__text">
+              Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+              Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+            </div>
+          </li>
+          <li class="articles__item"><a class="articles__title" href="">Приёмы в вёрстке, без которых не обходится ни один сайт</a>
+            <div class="articles__create_time">22 ноября 2016</div>
+            <div class="articles__text">
+              Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+              Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+            </div>
           </li>
         </ul>
       </div>
@@ -65,17 +106,29 @@
         <div class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
       </div>
       <div class="footer-main-center">
-        <ul class="menu footer__menu footer__menu_horizontal">
-          <li class="menu__item"><a class="menu__link" href="">Мои работы</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Обо мне</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Блог</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Авторизация</a></li>
+        <ul class="menu footer__menu">
+          <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+          <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
         </ul>
-        <div class="ul socials footer__socials">
-          <li class="socials__item"><a class="socials__link socials__link_vk" href=""></a></li>
-          <li class="socials__item"><a class="socials__link socials__link_github" href=""></a></li>
-          <li class="socials__item"><a class="socials__link socials__link_in" href=""></a></li>
-        </div>
+        <ul class="socials footer__socials">
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#vk"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#github"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#in"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
       <div class="footer-main-right">
         <div class="footer__text">

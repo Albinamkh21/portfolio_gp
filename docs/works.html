@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Works</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -28,54 +28,120 @@
 <body>
   <div class="wrapper">
     <section class="section hero">
-      <ul class="socials">
-        <li class="socials__item"><a class="socials__link socials__link_vk" href=""></a></li>
-        <li class="socials__item"><a class="socials__link socials__link_gh" href=""></a></li>
-        <li class="socials__item"><a class="socials__link socials__link_in" href=""></a></li>
-      </ul><a class="hamburger" href=""></a><a class="down-arrow" href=""></a>
-      <div class="hero__title"><img class="section-title" src="../../" alt="">
+      <div class="hero__bg"><img class="hero__bg-img" src="assets/img/bg/portfolio.jpg" alt="">
+        <ul class="socials hero__socials">
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#vk"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#github"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#in"></use>
+            </svg>
+          </li>
+        </ul>
+      </div><a class="hamburger hero__hamburger" href=""><img class="hamburger__img" src="assets/img/icons/svg/hamburger.svg"></a><a class="down-arrow" href=""><img class="down-arrow__icon" src="assets/img/icons/arrow_down.svg"></a>
+      <div class="hero__title"><img class="section-title" src="assets/img/decor/portfolio-header.png" alt="">
         <div class="user hero__user-block">
-          <div class="user__photo"></div>
-          <div class="user__name"></div>
-          <div class="user__desc"></div>
+          <div class="user__photo">
+            <div class="user__photo-avatar"><img class="user__photo-img" src="assets/img/content/user.jpg" alt=""></div>
+          </div>
+          <div class="user__name">Владимир Астахов</div>
+          <div class="user__text">Личный сайт веб разработчика</div>
         </div>
       </div>
     </section>
     <section class="section works">
-      <div class="title works__section-title">Мои работы</div>
-      <div class="about__left">
-        <svg class="triangle triangle_fill_white">
-          <div class="works-item">
-            <div class="title works-item__title">САЙТ ШКОЛЫ ОНЛАЙН /n ОБРАЗОВАНИЯ</div>
-            <div class="works-item__technology">HTML, CSS, JAVASCRIPT</div><a class="works-item__link"></a>
-          </div>
-        </svg>
+      <div class="works-content__triangle">
+        <div class="works-content__triangle_left">
+          <svg class="triangle triangle_fill_white blog_triangle_position" viewbox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,0 0,100 1000,100"></polygon>
+          </svg>
+        </div>
+        <div class="works-content__triangle_right">
+          <svg class="triangle triangle_fill_white blog_triangle_position" viewbox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,100 1000,100 1000,0"></polygon>
+          </svg>
+        </div>
       </div>
-      <div class="about__right">
-        <svg class="triangle triangle_fill_beige"></svg>
-        <div class="galery"></div>
+      <div class="works__title-wrapper">
+        <div class="title works__section-title" style="background-image: url('assets/img/decor/works-header.png');">Мои работы</div>
+      </div>
+      <div class="works__left">
+        <div class="works-item">
+          <div class="works-item__text">
+            <div class="works-item__title subtitle">САЙТ ШКОЛЫ ОНЛАЙН <wrap> ОБРАЗОВАНИЯ</div>
+            <div class="works-item__technology">HTML, CSS, JAVASCRIPT</div><a class="works-item__link">Посмотреть сайт
+              <!--svg.works-item__link-icon
+              //  use(xlink:href="assets/img/icons/sprite.svg#link")
+              
+              --></a>
+          </div>
+        </div>
+      </div>
+      <div class="works__right">
+        <div class="slider">
+          <div class="slider-top">
+            <div class="slider__main-photo-wrapper"><img src="assets/img/content/slider1.png"></div>
+          </div>
+          <div class="slider-bottom">
+            <div class="slider-bottom__left">
+              <div class="slider-bottom__photo"><img class="slider-bottom__photo1" src="assets/img/content/1.png">
+                <div class="slider-bottom__fon_left"><a class="slider__down-arrow" href=""><img class="slider__down-arrow-icon" src="assets/img/icons/svg/portf_arrow_down.svg"></a></div>
+              </div>
+            </div>
+            <div class="slider-bottom__right">
+              <div class="slider-bottom__photo"><img class="slider-bottom__photo1" src="assets/img/content/1.png">
+                <div class="slider-bottom__fon_right"><a class="slider__down-arrow" href=""><img class="slider__down-arrow-icon" src="assets/img/icons/svg/portf_arrow_up.svg"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section feedbacks">
-      <div class="title feedbacks__section-title">Что обо мне /n говорят</div>
-      <div class="feedbacks-data">
-        <!--это список, или все-таки два одинаовых дива с модификатором позиционирования-->
-        <div class="feedbacks-data feedbacks-data_position_left"><img class="feedbacks-data__picture" src="">
-          <div class="feedbacks-data__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
-          <div class="feedbacks-data__signanure signature-name">Ковальчук Дмитрий</div>
-          <div class="feedbacks-data__signanure signature-position">основаель LoftSchool</div>
-        </div>
-        <div class="feedbacks-data feedbacks-data_position_right"><img class="feedbacks-data__picture" src="">
-          <div class="feedbacks-data__text">тот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
-          <div class="feedbacks-data__signanure signature-name">Сабанцев Владимир</div>
-          <div class="feedbacks-data__signanure signature-position">преподаватель</div>
-        </div>
+      <div class="feedbacks__title-wrapper">
+        <div class="title feedbacks__section-title" style="background-image: url('assets/img/decor/about-header.png');">Что обо мне  говорят</div>
       </div>
-      <div class="feedbacks-form">
-        <div class="feedbacks-form__title"></div>
-        <input class="feedbacks-form__name">
-        <input class="feedbacks-form__email">
-        <textarea class="feedbacks-form__text"></textarea><a class="feedbacks-form__btn-send">Отправить</a><a class="feedbacks-form__btn-clear">Очистить</a>
+      <div class="feedbacks-data__wrapper">
+        <div class="feedbacks-data">
+          <!--img(src="assets/img/bg/feedbacks_bg.jpg", alt="")-->
+          <!--это список, или все-таки два одинаовых дива с модификатором позиционирования-->
+          <div class="feedbacks-data_position_left">
+            <div class="feedbacks__item margin_right">
+              <div class="feedbacks-data__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+              <div class="feedbacks__item-photo"><img class="feedbacks__item-img" src="assets/img/content/user.jpg" alt=""></div>
+              <div class="feedbacks-data__signanure">
+                <div class="signature-name">Ковальчук Дмитрий</div>
+                <div class="signature-position">основаель LoftSchool</div>
+              </div>
+            </div>
+          </div>
+          <div class="feedbacks-data_position_right">
+            <div class="feedbacks__item">
+              <div class="feedbacks-data__text">тот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+              <div class="feedbacks__item-photo"><img class="feedbacks__item-img" src="assets/img/content/user.jpg" alt=""></div>
+              <div class="feedbacks-data__signanure">
+                <div class="signature-name">Сабанцев Владимир</div>
+                <div class="signature-position">преподаватель</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-connect">
+          <div class="subtitle subtitle_line">Связаться со сной</div>
+          <input class="form-connect__name" placeholder="Имя">
+          <input class="form-connect__email" placeholder="Email">
+          <textarea class="form-connect__text" placeholder="Ваше сообщение"></textarea>
+          <div class="form-connect__btn-wrapper form-connect__btn-wrapper_left"><a class="form-connect__btn form-connect__btn-send">Отправить</a></div>
+          <div class="form-connect__btn-wrapper form-connect__btn-wrapper_right"><a class="form-connect__btn form-connect__btn-clear">Очистить</a></div>
+        </div>
       </div><a class="up-arrow" href=""></a>
     </section>
   </div>
@@ -85,17 +151,29 @@
         <div class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
       </div>
       <div class="footer-main-center">
-        <ul class="menu footer__menu footer__menu_horizontal">
-          <li class="menu__item"><a class="menu__link" href="">Мои работы</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Обо мне</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Блог</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Авторизация</a></li>
+        <ul class="menu footer__menu">
+          <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+          <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
         </ul>
-        <div class="ul socials footer__socials">
-          <li class="socials__item"><a class="socials__link socials__link_vk" href=""></a></li>
-          <li class="socials__item"><a class="socials__link socials__link_github" href=""></a></li>
-          <li class="socials__item"><a class="socials__link socials__link_in" href=""></a></li>
-        </div>
+        <ul class="socials footer__socials">
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#vk"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#github"></use>
+            </svg>
+          </li>
+          <li class="socials__item">
+            <svg class="socials__icon">
+              <use xlink:href="assets/img/icons/sprite.svg#in"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
       <div class="footer-main-right">
         <div class="footer__text">
