@@ -150,17 +150,13 @@ var flipper = (function () {
 
     document.addEventListener('click', function (e) {
         console.log(e.target.id);
-        console.log(e.target);
         if(e.target.id=="authBtn"){
             e.preventDefault();
             flipper.classList.add('hover');
 
         }else {
 
-            if(e.target.id=="welcomeHeroImg") {
-                flipper.classList.remove('hover');
-            }
-
+            flipper.classList.remove('hover');
 
         }
     });
