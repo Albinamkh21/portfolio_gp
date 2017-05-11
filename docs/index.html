@@ -29,38 +29,67 @@
   <div class="wrapper">
     <section class="section hero">
       <!--block variables-->
-      <div class="hero__bg"><img class="hero__bg-img" src="assets/img/bg/portfolio.jpg" alt="">
-        <div class="welcome__user-wrapper">
-          <div class="user-wrapper">
-            <div class="user">
-              <div class="user__photo">
-                <div class="user__photo-avatar"><img class="user__photo-img" src="assets/img/content/user.jpg" alt=""></div>
+      <div class="hero__bg" id=""><img class="hero__bg-img" src="assets/img/bg/portfolio.jpg" alt="" id="welcomeHeroImg">
+        <div class="welcome__auth-btn auth-btn"><a class="auth-btn__link" href="" id="authBtn">Авторизоваться</a></div>
+        <div class="flip-container" id="flipContainer">
+          <div class="flipper" id="flipper">
+            <div class="welcome__user-wrapper">
+              <div class="user-wrapper">
+                <div class="user">
+                  <div class="user__photo">
+                    <div class="user__photo-avatar"><img class="user__photo-img" src="assets/img/content/user.jpg" alt=""></div>
+                  </div>
+                  <div class="user__name user_color_main">Владимир Астахов</div>
+                  <div class="user__text user_color_main"> Личный сайт веб разработчика</div>
+                </div>
+                <ul class="socials welcome__socials socials_green">
+                  <li class="socials__item">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/img/icons/sprite.svg#vk"></use>
+                    </svg>
+                  </li>
+                  <li class="socials__item">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/img/icons/sprite.svg#github"></use>
+                    </svg>
+                  </li>
+                  <li class="socials__item">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/img/icons/sprite.svg#in"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <ul class="menu welcome__menu menu_green">
+                  <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                  <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                </ul>
               </div>
-              <div class="user__name user_color_main">Владимир Астахов</div>
-              <div class="user__text user_color_main"> Личный сайт веб разработчика</div>
             </div>
-            <ul class="socials welcome__socials socials_green">
-              <li class="socials__item">
-                <svg class="socials__icon">
-                  <use xlink:href="assets/img/icons/sprite.svg#vk"></use>
-                </svg>
-              </li>
-              <li class="socials__item">
-                <svg class="socials__icon">
-                  <use xlink:href="assets/img/icons/sprite.svg#github"></use>
-                </svg>
-              </li>
-              <li class="socials__item">
-                <svg class="socials__icon">
-                  <use xlink:href="assets/img/icons/sprite.svg#in"></use>
-                </svg>
-              </li>
-            </ul>
-            <ul class="menu welcome__menu menu_green">
-              <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
-              <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-              <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-            </ul>
+            <div class="welcome__auth-wrapper">
+              <!--block variables-->
+              <div class="auth">
+                <div class="subtitle auth__title">Авторизуйтесь</div>
+                <div class="auth__input">
+                  <div class="login_pic"></div>
+                  <input class="login_input" placeholder="Логин">
+                </div>
+                <div class="auth__input">
+                  <div class="password_pic"></div>
+                  <input class="password__input" placeholder="Пароль">
+                </div>
+                <div class="auth__capcha">
+                  <input class="checkbox-input" type="checkbox" id="isPerson"><span>Я человек</span>
+                  <div class="text_bold">Вы точно не робот?</div>
+                  <input type="radio" name="robot">Да
+                  <input type="radio" name="robot">Не уверен
+                  <ul class="menu auth__menu menu_green">
+                    <li class="menu__item"><a class="menu__link" href="index.html">На главную</a></li>
+                    <li class="menu__item"><a class="menu__link" href="auth.html">Войти</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
