@@ -10,6 +10,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/foundation.js" defer></script>
     <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
@@ -26,7 +27,25 @@
   </style>
 </html>
 <body>
+  <div class="preloader">
+    <div class="preloader__spinner">
+      <div class="preloader__animation"></div>
+      <div class="preloader__percents">100%</div>
+    </div>
+  </div>
   <div class="page-content">
+    <div class="fullscreen-menu" style="display: none;">
+      <ul class="fullscreen-menu__list">
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link active" href="works.html">
+            <div class="subtitle title__small_fullscreen_menu">Мои работы</div></a></li>
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link " href="about.html">
+            <div class="subtitle title__small_fullscreen_menu">Обо мне</div></a></li>
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link " href="blog.html">
+            <div class="subtitle title__small_fullscreen_menu">Блог</div></a></li>
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link " href="welcome.html">
+            <div class="subtitle title__small_fullscreen_menu">Авторизация</div></a></li>
+      </ul>
+    </div>
     <div class="wrapper">
       <section class="section hero">
         <div class="hero__bg"><img class="hero__bg-img" src="assets/img/bg/portfolio.jpg" alt="">
@@ -103,10 +122,10 @@
     </div>
     <footer class="footer">
       <section class="section footer-main">
-        <div class="footer-main-left">
+        <div class="footer-main-column">
           <div class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
         </div>
-        <div class="footer-main-center">
+        <div class="footer-main-column">
           <ul class="menu footer__menu">
             <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
             <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
@@ -131,7 +150,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-main-right">
+        <div class="footer-main-column">
           <div class="footer__text">
             <p>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</p>
           </div>

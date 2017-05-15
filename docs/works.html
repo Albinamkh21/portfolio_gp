@@ -10,6 +10,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/foundation.js" defer></script>
     <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
@@ -26,7 +27,25 @@
   </style>
 </html>
 <body>
+  <div class="preloader">
+    <div class="preloader__spinner">
+      <div class="preloader__animation"></div>
+      <div class="preloader__percents">100%</div>
+    </div>
+  </div>
   <div class="page-content">
+    <div class="fullscreen-menu" style="display: none;">
+      <ul class="fullscreen-menu__list">
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link active" href="works.html">
+            <div class="subtitle title__small_fullscreen_menu">Мои работы</div></a></li>
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link " href="about.html">
+            <div class="subtitle title__small_fullscreen_menu">Обо мне</div></a></li>
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link " href="blog.html">
+            <div class="subtitle title__small_fullscreen_menu">Блог</div></a></li>
+        <li class="fullscreen-menu__item"><a class="fullscreen-menu__link " href="welcome.html">
+            <div class="subtitle title__small_fullscreen_menu">Авторизация</div></a></li>
+      </ul>
+    </div>
     <div class="wrapper">
       <section class="section hero">
         <div class="hero__bg"><img class="hero__bg-img" src="assets/img/bg/portfolio.jpg" alt="">
@@ -47,7 +66,11 @@
               </svg>
             </li>
           </ul>
-        </div><a class="hamburger hero__hamburger" href=""><img class="hamburger__img" src="assets/img/icons/svg/hamburger.svg"></a><a class="down-arrow" href=""><img class="down-arrow__icon" src="assets/img/icons/arrow_down.svg"></a>
+        </div>
+        <div class="hero__hamburger">
+          <!--img(src="assets/img/icons/svg/hamburger.svg",class="hamburger__img")-->
+          <div class="hamburger-menu"><a class="hamburger-menu__link" href="#"><span class="hamburger-menu__link-center"></span></a></div>
+        </div><a class="down-arrow" href=""><img class="down-arrow__icon" src="assets/img/icons/arrow_down.svg"></a>
         <div class="hero__title"><img class="section-title" src="assets/img/decor/portfolio-header.png" alt="">
           <div class="user hero__user-block">
             <div class="user__photo">
@@ -84,34 +107,38 @@
                   <div class="subtitle">Бейсбол онлайн</div>
                 </div>
                 <div class="slider__description-skills">HTML, css, PHP</div>
-                <div class="slider__description-btn"><a class="btn" href="#">Посмотреть сайт</a></div>
+                <div class="slider__description-btn-wrapper"><a class="slider__description__btn" href="#"><i class="fa fa-link" aria-hidden="true"></i>
+                    <div class="slider__description__btn-text">Посмотреть сайт</div></a></div>
               </li>
               <li class="slider-description__item ">
                 <div class="slider__description-title">
                   <div class="subtitle">Сайт школы онлайн <br> образования</div>
                 </div>
                 <div class="slider__description-skills">HTML, css, javascript</div>
-                <div class="slider__description-btn"><a class="btn" href="#">Посмотреть сайт</a></div>
+                <div class="slider__description-btn-wrapper"><a class="slider__description__btn" href="#"><i class="fa fa-link" aria-hidden="true"></i>
+                    <div class="slider__description__btn-text">Посмотреть сайт</div></a></div>
               </li>
               <li class="slider-description__item ">
                 <div class="slider__description-title">
                   <div class="subtitle">Лучшие бассейны</div>
                 </div>
                 <div class="slider__description-skills">HTML, css, PHP</div>
-                <div class="slider__description-btn"><a class="btn" href="#">Посмотреть сайт</a></div>
+                <div class="slider__description-btn-wrapper"><a class="slider__description__btn" href="#"><i class="fa fa-link" aria-hidden="true"></i>
+                    <div class="slider__description__btn-text">Посмотреть сайт</div></a></div>
               </li>
               <li class="slider-description__item ">
                 <div class="slider__description-title">
                   <div class="subtitle">Йога студия</div>
                 </div>
                 <div class="slider__description-skills">HTML, css, javascript, PHP</div>
-                <div class="slider__description-btn"><a class="btn" href="#">Посмотреть сайт</a></div>
+                <div class="slider__description-btn-wrapper"><a class="slider__description__btn" href="#"><i class="fa fa-link" aria-hidden="true"></i>
+                    <div class="slider__description__btn-text">Посмотреть сайт</div></a></div>
               </li>
             </ul>
           </div>
         </div>
-        <div class="slider__display">
-          <div class="slider__display-block"><img class="slider__display-pic" src="assets/img/slider/1.jpeg">
+        <div class="slider__display"><img class="slider__display-pic" src="assets/img/slider/1.jpeg">
+          <div class="slider__display-block">
             <ul class="slider__list">
               <li class="slider__item active"><img src="assets/img/slider/1.jpeg"></li>
               <li class="slider__item"><img src="assets/img/slider/2.jpeg"></li>
@@ -122,39 +149,31 @@
         </div>
         <div class="slider__btns">
           <div class="slider__btns__down">
-            <div class="slider__btns__photo">
-              <ul class="slider__list">
-                <li class="slider__item "><img class="slider__btns__photo1" src="assets/img/slider/1.jpeg"></li>
-                <li class="slider__item"><img class="slider__btns__photo1" src="assets/img/slider/2.jpeg"></li>
-                <li class="slider__item"><img class="slider__btns__photo1" src="assets/img/slider/3.jpeg"></li>
-                <li class="slider__item active"><img class="slider__btns__photo1" src="assets/img/slider/4.jpeg"></li>
-              </ul><a class="slider__down-arrow" href="" id="sliderDownArrow"><img class="slider__down-arrow-icon" src="assets/img/icons/svg/portf_arrow_down.svg"></a>
-              <div class="slider__btns__fon_down"></div>
-            </div>
+            <ul class="slider__list">
+              <li class="slider__item "><img class="slider__btns__photo" src="assets/img/slider/1.jpeg"></li>
+              <li class="slider__item"><img class="slider__btns__photo" src="assets/img/slider/2.jpeg"></li>
+              <li class="slider__item"><img class="slider__btns__photo" src="assets/img/slider/3.jpeg"></li>
+              <li class="slider__item active"><img class="slider__btns__photo" src="assets/img/slider/4.jpeg"></li>
+            </ul><a class="slider__btns_link slider__btns_link_color_lighten" href="" id="sliderDownArrow"><img class="slider__down-arrow-icon" src="assets/img/icons/svg/portf_arrow_down.svg"></a>
           </div>
           <div class="slider__btns__up">
-            <div class="slider__btns__photo">
-              <ul class="slider__list">
-                <li class="slider__item "><img class="slider__btns__photo1" src="assets/img/slider/1.jpeg"></li>
-                <li class="slider__item active"><img class="slider__btns__photo1" src="assets/img/slider/2.jpeg"></li>
-                <li class="slider__item"><img class="slider__btns__photo1" src="assets/img/slider/3.jpeg"></li>
-                <li class="slider__item"><img class="slider__btns__photo1" src="assets/img/slider/4.jpeg"></li>
-              </ul><a class="slider__down-arrow" href="" id="sliderUpArrow"><img class="slider__down-arrow-icon" src="assets/img/icons/svg/portf_arrow_up.svg"></a>
-              <div class="slider__btns__fon_up"></div>
-            </div>
+            <ul class="slider__list">
+              <li class="slider__item "><img class="slider__btns__photo" src="assets/img/slider/1.jpeg"></li>
+              <li class="slider__item active"><img class="slider__btns__photo" src="assets/img/slider/2.jpeg"></li>
+              <li class="slider__item"><img class="slider__btns__photo" src="assets/img/slider/3.jpeg"></li>
+              <li class="slider__item"><img class="slider__btns__photo" src="assets/img/slider/4.jpeg"></li>
+            </ul><a class="slider__btns_link" href="" id="sliderUpArrow"><img class="slider__down-arrow-icon" src="assets/img/icons/svg/portf_arrow_up.svg"></a>
           </div>
         </div>
       </section>
       <section class="section feedbacks">
-        <div class="feedbacks__title-wrapper">
-          <div class="title feedbacks__section-title" style="background-image: url('assets/img/decor/about-header.png');">Что обо мне  говорят</div>
-        </div>
+        <div class="title feedbacks__section-title" style="background-image: url('assets/img/decor/about-header.png');">Что обо мне  говорят</div>
         <div class="feedbacks-data__wrapper">
           <div class="feedbacks-data">
             <!--img(src="assets/img/bg/feedbacks_bg.jpg", alt="")-->
             <!--это список, или все-таки два одинаовых дива с модификатором позиционирования-->
             <div class="feedbacks-data_position_left">
-              <div class="feedbacks__item margin_right">
+              <div class="feedbacks__item margin_right"><i class="fa fa-quote-left feedbacks__item-quote" aria-hidden="true"></i>
                 <div class="feedbacks-data__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
                 <div class="feedbacks__item-user">
                   <div class="feedbacks__item-photo"><img class="feedbacks__item-img" src="assets/img/content/user.jpg" alt=""></div>
@@ -166,7 +185,7 @@
               </div>
             </div>
             <div class="feedbacks-data_position_right">
-              <div class="feedbacks__item">
+              <div class="feedbacks__item"><i class="fa fa-quote-left feedbacks__item-quote" aria-hidden="true"></i>
                 <div class="feedbacks-data__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
                 <div class="feedbacks__item-user">
                   <div class="feedbacks__item-photo"><img class="feedbacks__item-img" src="assets/img/content/user.jpg" alt=""></div>
@@ -179,10 +198,12 @@
             </div>
           </div>
           <div class="form-connect">
-            <div class="subtitle subtitle_line">Связаться со сной</div>
-            <input class="form-connect__name" placeholder="Имя">
-            <input class="form-connect__email" placeholder="Email">
-            <textarea class="form-connect__text" placeholder="Ваше сообщение"></textarea>
+            <div class="subtitle">Связаться со сной</div>
+            <div class="form-connect__inputs">
+              <input class="form-connect__name" placeholder="Имя">
+              <input class="form-connect__email" placeholder="Email">
+              <textarea class="form-connect__text" placeholder="Ваше сообщение"></textarea>
+            </div>
             <div class="form-connect__btn-wrapper">
               <div class="form-connect__btn-wrapper_left"><a class="form-connect__btn form-connect__btn-send">Отправить</a></div>
               <div class="form-connect__btn-wrapper_right"><a class="form-connect__btn form-connect__btn-clear">Очистить</a></div>
@@ -193,10 +214,10 @@
     </div>
     <footer class="footer">
       <section class="section footer-main">
-        <div class="footer-main-left">
+        <div class="footer-main-column">
           <div class="footer__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
         </div>
-        <div class="footer-main-center">
+        <div class="footer-main-column">
           <ul class="menu footer__menu">
             <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
             <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
@@ -221,7 +242,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-main-right">
+        <div class="footer-main-column">
           <div class="footer__text">
             <p>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</p>
           </div>
